@@ -17,7 +17,7 @@ class GeminiAPI:
                 {
                     'parts': [
                         {
-                            'text': f"내가 적은글(생기부)은 {prompt} 인데, 이 중에서 gemini 너가 중요하다고 생각되는 단어를 4가지 정도만 뽑아서 그 단어의 정의나 활용에 대해서 상세하게 설명해줘봐. 각 번호마다 문단 나누기를 해"
+                            'text': f"{prompt}"
                         }
                     ]
                 }
@@ -136,7 +136,7 @@ def chat_with_gemini():
             <div class="container">
                 <div class="messages" id="messages"></div>
                 <div class="input-area">
-                    <input type="text" id="questionInput" placeholder="생기부 내용 입력">
+                    <input type="text" id="questionInput" placeholder="내용 입력">
                     <button id="sendButton">전송</button>
                 </div>
             </div>
